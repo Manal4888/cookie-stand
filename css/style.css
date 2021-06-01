@@ -1,7 +1,7 @@
 table,th,td,tr,article{
      
     border:solid black 2px;
-  
+    border-collapse: collapse;
    
    text-align: center;
    text-size-adjust:inherit;
