@@ -6,3 +6,14 @@ table,th,td,tr,article{
    text-align: center;
    text-size-adjust:inherit;
 }
+
+
+ 
+    
+
+header h1{
+    text-align: center;
+}
+body header nav ul li a{
+    display: inline;
+    text-decoration: none;}
