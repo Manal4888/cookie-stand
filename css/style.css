@@ -1,8 +1,19 @@
 table,th,td,tr,article{
      
     border:solid black 2px;
-  
+    border-collapse: collapse;
    
    text-align: center;
    text-size-adjust:inherit;
 }
+
+
+ 
+    
+
+header h1{
+    text-align: center;
+}
+body header nav ul li a{
+    display: inline;
+    text-decoration: none;}
