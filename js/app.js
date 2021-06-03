@@ -9,11 +9,12 @@ function randomNumber(min, max) {
   
 
        
-   
+
    
     let shops=[];
     function Shop(name,minCust, maxCust,avgCookies)
-    { this.name=name;
+    { 
+      this.name=name;
       this.minCust=  minCust;
       this.maxCust=  maxCust;
       this.avgCookies=avgCookies;
@@ -24,10 +25,11 @@ function randomNumber(min, max) {
 
         let parent=document.getElementById('article'); 
         let table=document.createElement('table');
+     
             article.appendChild(table);
-        
+           
        
-
+            
  Shop.prototype.getNumCust=function()
     {    for (let i=0; i< workHours.length; i++ )
          {  
@@ -122,7 +124,10 @@ function randomNumber(min, max) {
           let thElement1=document.createElement('th');
             headingRow.appendChild(thElement1); 
             thElement1.textContent=totalOfTotal;  
-       }
+           
+            
+
+          }
         
         
         
@@ -132,38 +137,75 @@ function randomNumber(min, max) {
        
         let seattle =new Shop('Seattle',23,65,6.3);
 
-        // seattle.getNumCust();
-        // seattle.render();
-      
+        seattle.getNumCust();
+        seattle.render();
+        
    
         let tokyo =new Shop('Tokyo',3,24,1.2);
-        // tokyo.getNumCust();
-        // tokyo.render();
-       
+        tokyo.getNumCust();
+        tokyo.render();
+        
 
         let dubai =new Shop('Dubai',11,	38	,3.7);
-        // dubai.getNumCust();
-        // dubai.render();
-
+        dubai.getNumCust();
+        dubai.render();
+        
 
         let paris =new Shop('Paris',20,38,2.3);
-        // paris.getNumCust();
-        // paris.render();
-
+        paris.getNumCust();
+        paris.render();
+      
+        
 
         let lima =new Shop('Lima',2,16,	4.6);
-        // lima.getNumCust();
-        // lima.render();
+        lima.getNumCust();
+        lima.render();
+        
 
-        for (let i = 0; i < shops.length; i++) {
-               shops[i].getNumCust()
-               shops[i].render()
+        // for (let i = 0; i < shops.length; i++) {
+        //        shops[i].getNumCust()
+               
+        //        shops[i].render()
+              
+        // }
+       
+        // let reset =new Shop('reset',0,0,0);
+        // reset.getNumCust();
+        // reset.render();
+        
+        let form=document.getElementById('form');
+        form.addEventListener("submit",submitter);
+        
+        function submitter (event)
+        {event.preventDefault();
+        
+        
+        
+      
+          let name=event.target.name.value
+        console.log(name)
+        let minCust=event.target.minCust.value
+        console.log(minCust)
+        let maxCust=event.target.maxCust.value
+        console.log(maxCust)
+        let avgCookies=event.target.avgCookies.value
+        console.log(avgCookies)
+        
+        let addedshop=new Shop(name,minCust,maxCust,avgCookies);
+       
+        addedshop.getNumCust();
+        addedshop.render();
           
-        }
-
-
+       
         tabfooter ();
-
+        }
+        
+        
+        // document.getElementById("headingRow").reset() //it does not work 
+       //
+        
+        
+    
 
 // // Seattle
 // let seattle={ 
