@@ -1,0 +1,54 @@
+table,th,td,tr{
+     
+    border:solid black 5px;
+    border-collapse: collapse;
+    text-align: center;
+    text-indent: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+table{
+    margin-left: 5%;
+    background-color: rgb(201, 243, 243);
+}
+
+body{
+    background-color:white;
+}
+
+header{
+    margin-left: 5%;
+}
+header div{
+    float: right;
+    right:10%;
+    
+}
+header h2{
+    display: inline;
+    float: right;
+    right:30%;
+    top:30%
+}
+header h2 a{
+    text-decoration: none;
+    color: black;
+}
+header h2 a:hover
+{color: blue;}
+header img{
+    width: 200px;
+    margin-left: 10%;
+}
+
+fieldset{
+    display: inline;
+   margin-left: 10%;
+    margin-top: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(240, 163, 179);
+}  
+form img{
+    margin-left: 10%;
+    margin-top:10%;
+}

@@ -1,12 +1,99 @@
-table,th,td,tr,article{
-     
-    border:solid black 2px;
-    border-collapse: collapse;
-   
-   text-align: center;
-   text-size-adjust:inherit;
+
+
+body{
+
+    background-color: burlywood;
+    position: relative;
 }
 
+header{
+    position: relative;
+}
+ 
+ header h1{
+    display: inline;
+    padding-left: 20%;
+   position:absolute;
+   top: 5px;
+   font-family: 'Sigmar One', cursive;
+   
+ }
 
+ header h2 a{
+     position:absolute;
+     right:5%;
+     top:70%;
+     font-family: 'Sigmar One', cursive;
+     text-decoration:none;
+     color: black;
+     
+    
+ }
+
+ header h2 a:hover{
+    color: blue;
+ }
+ #saleslogo{
+    position:absolute;
+    right:5%;
+    top:5%;
+    width: 10%;
+    
+ }
+
+ header p{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: xx-large;
+     font-style: oblique;
+     
+     font-weight: bolder;
+     padding-top: 5%;
+     display: inline;
+     margin-left: 5%;
+ }
+ header nav ul li a{
+   
+     text-decoration: none;
+     color: black;
+     font-size: x-large;
+     font-style: bold;
+     padding-inline: 2%;
+ }
+ header nav ul li a:hover{
+     color: blue;
+ }
  
+ header nav ul li { display: inline;}
+
+ main{
+     position: relative;
+ }
  
+     
+ 
+ #home img{
+     width: 700x;
+     height: 500px;
+    position: relative;
+    left:30%;
+
+ }
+ .other{
+    display: block;
+    position: relative;
+ }
+   main section p{
+    font-family: 'Suez One', serif;
+    font-size: xx-large;
+    display: inline;
+    padding-left: 10%;
+    padding-right:5%;
+   }
+    
+ 
+ footer{
+    clear:both;
+    color:brown;
+    font-style: italic;
+    
+ }

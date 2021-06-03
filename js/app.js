@@ -22,7 +22,7 @@ function Shop(name, minCust, maxCust, avgCookies) {
 
 }
 
-let parent = document.getElementById('article');
+let parent = document.getElementById('parent');
 let table = document.createElement('table');
 
 parent.appendChild(table);
@@ -137,48 +137,46 @@ tabHeader();
 
 let seattle = new Shop('Seattle', 23, 65, 6.3);
 
-seattle.getNumCust();
-seattle.render();
+// seattle.getNumCust();
+// seattle.render();
 
 
 let tokyo = new Shop('Tokyo', 3, 24, 1.2);
-tokyo.getNumCust();
-tokyo.render();
+// tokyo.getNumCust();
+// tokyo.render();
 
 
 let dubai = new Shop('Dubai', 11, 38, 3.7);
-dubai.getNumCust();
-dubai.render();
+// dubai.getNumCust();
+// dubai.render();
 
 
 let paris = new Shop('Paris', 20, 38, 2.3);
-paris.getNumCust();
-paris.render();
+// paris.getNumCust();
+// paris.render();
 
 
 
 let lima = new Shop('Lima', 2, 16, 4.6);
-lima.getNumCust();
-lima.render();
+// lima.getNumCust();
+// lima.render();
 
 
-// for (let i = 0; i < shops.length; i++) {
-//        shops[i].getNumCust()
+for (let i = 0; i < shops.length; i++) {
+       shops[i].getNumCust()
 
-//        shops[i].render()
+       shops[i].render()
 
-// }
+}
 
-// let reset =new Shop('reset',0,0,0);
-// reset.getNumCust();
-// reset.render();
+
 
 let form = document.getElementById('form');
 form.addEventListener("submit", submitter);
 
 function submitter(event) {
   event.preventDefault();
-  console.log(event);
+
 
 
 
@@ -193,16 +191,14 @@ function submitter(event) {
   console.log(avgCookies);
 
 
-  // addedshop.getNumCust();
-  // addedshop.render();
   if (minCust < maxCust) {
     let addedshop = new Shop(name, minCust, maxCust, avgCookies);
 
-    table.textContent = '';
+    table.textContent = '';     //to reset the contents of the table 
 
     tabHeader();
 
-    for (let i = 0; i < shops.length; i++) {
+    for (let i = 0; i < shops.length; i++) {     // to call sll the shopa again
       shops[i].getNumCust();
 
       shops[i].render();
@@ -217,8 +213,7 @@ function submitter(event) {
     minCust = maxCust;
     maxCust = tempMin;
 
-    console.log(minCust);
-    console.log(maxCust);
+  
     let addedshop = new Shop(name, minCust, maxCust, avgCookies);
 
     table.textContent = '';
@@ -238,9 +233,7 @@ function submitter(event) {
 }
 
 tabfooter();
-        // document.getElementById("headingRow").reset() //it does not work
-       //
-
+      
 
 
 
